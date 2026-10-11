@@ -1,65 +1,1305 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مجالات الأعمال | خدمات محاسبية ومالية وتقنية في اليمن</title>
-    <meta name="description" content="مجالات الأعمال - شركة يمنية متخصصة في تقديم خدمات المحاسبة والاستشارات المالية والحلول التقنية للمنشآت الصغيرة والمتوسطة في اليمن." />
-    <meta property="og:title" content="Majalat Business Services | Accounting & Digital Solutions in Yemen" />
-    <meta property="og:description" content="Financial & digital solutions for growing businesses in Yemen. Accounting, consulting, web design, and IT services." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.majalatac.com/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="canonical" href="https://www.majalatac.com/" />
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>انضم كمزود خدمة في احجزلي | أول شهر بدون عمولة</title>
+<meta name="description" content="انضم لأول 30 مزود خدمة واحصل على شهر كامل بدون عمولة. مسابح · ملاعب · واي فاي · سفر." />
+<meta name="theme-color" content="#17A89C" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--t7:#0E6E66;--t5:#17A89C;--t2:#A8E0DA;--t0:#E9F7F5;--n9:#050B22;--n8:#0E1A44;--n7:#1A2859;--n0:#EDEFF6;--g4:#E0B94A;--g3:#F0D06E;--gr:#059669;--rd:#DC2626;--ik:#0F1A24;--i7:#28374A;--i5:#5B6A7E;--ln:#E4E9F0;--bg:#F8FAFC;--r:14px;--rl:22px;--sm:0 1px 2px rgba(14,26,68,.05),0 2px 6px rgba(14,26,68,.04);--md:0 10px 30px rgba(14,26,68,.08),0 2px 8px rgba(14,26,68,.04);--lg:0 30px 70px rgba(14,26,68,.16);--gt:linear-gradient(135deg,#0A3D39 0%,#0E6E66 55%,#17A89C 100%);--gn:linear-gradient(135deg,#050B22 0%,#0E1A44 55%,#1A2859 100%);--gb:linear-gradient(135deg,#0E1A44 0%,#17A89C 100%);--gs:linear-gradient(135deg,#17A89C 0%,#3FBDB2 100%);--gg:linear-gradient(135deg,#B8873A 0%,#E0B94A 50%,#F0D06E 100%)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Tajawal','IBM Plex Sans Arabic',system-ui,sans-serif;background:var(--bg);color:var(--ik);line-height:1.8;font-size:18px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.container{max-width:1240px;margin:0 auto;padding:0 24px}
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+/* TOPBAR */
+.topbar{background:linear-gradient(90deg,#050B22,#0E1A44 50%,#050B22);color:#fff;font-size:15px;padding:11px 0;position:relative;overflow:hidden}
+.topbar::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(23,168,156,.18),transparent);animation:sh 4s infinite}
+@keyframes sh{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.topbar .container{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;position:relative;z-index:2}
+.topbar .pulse{width:10px;height:10px;border-radius:50%;background:var(--g4);animation:pl 2s infinite;flex-shrink:0}
+@keyframes pl{0%{box-shadow:0 0 0 0 rgba(224,185,74,.7)}70%{box-shadow:0 0 0 12px rgba(224,185,74,0)}100%{box-shadow:0 0 0 0 rgba(224,185,74,0)}}
+.topbar strong{color:var(--g3);font-weight:900}
 
-    <!-- Prevent flash of incorrect theme -->
-    <script>
-      (function() {
-        const stored = localStorage.getItem('majalat-theme');
-        if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.setAttribute('data-theme', 'dark');
-        }
-        const lang = localStorage.getItem('majalat-lang');
-        if (lang === 'en') {
-          document.documentElement.setAttribute('lang', 'en');
-          document.documentElement.setAttribute('dir', 'ltr');
-        }
-      })();
-    </script>
+/* NAVBAR */
+.navbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--ln);transition:.25s}
+.navbar.scrolled{box-shadow:var(--sm)}
+.navbar .container{display:flex;align-items:center;justify-content:space-between;height:80px;gap:20px}
+.logo{display:flex;flex-direction:column;line-height:1}
+.logo-name{font-size:26px;font-weight:900;color:var(--n8);letter-spacing:-.4px}
+.logo-sub{font-size:12.5px;color:var(--t7);letter-spacing:1.4px;font-weight:800;direction:ltr;text-align:right;margin-top:2px}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{font-size:15.5px;font-weight:700;color:var(--i7);padding:9px 14px;border-radius:9px;transition:.2s}
+.nav-links a:hover{background:var(--t0);color:var(--t7)}
+@media(max-width:900px){.nav-links{display:none}.navbar .container{height:70px}}
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Majalat Business Services",
-      "alternateName": "مجالات الأعمال",
-      "url": "https://www.majalatac.com",
-      "email": "info@majalatac.com",
-      "telephone": "+967775924285",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "Hadhramaut",
-        "addressCountry": "YE"
-      },
-      "sameAs": [
-        "https://www.instagram.com/majalatac/",
-        "https://www.facebook.com/share/19WF6UbEWu/"
-      ]
-    }
-    </script>
-    <script type="module" crossorigin src="/assets/index-i54EGKW6.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/AppButton-CMkeAgQU.js">
-    <link rel="stylesheet" crossorigin href="/assets/AppButton-DxaAIj8O.css">
-    <link rel="stylesheet" crossorigin href="/assets/index-y3bPthbl.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:16px;padding:13px 22px;border-radius:11px;border:1px solid transparent;cursor:pointer;transition:.22s;white-space:nowrap;font-family:inherit;text-align:center;text-decoration:none}
+.btn svg{width:22px;height:22px;flex-shrink:0}
+.btn-brand{background:var(--gb);color:#fff;box-shadow:0 10px 24px rgba(14,26,68,.22)}
+.btn-brand:hover{transform:translateY(-2px)}
+.btn-teal{background:var(--gs);color:#fff;box-shadow:0 10px 24px rgba(23,168,156,.28)}
+.btn-teal:hover{transform:translateY(-2px)}
+.btn-navy{background:var(--gn);color:#fff;box-shadow:0 10px 24px rgba(14,26,68,.24)}
+.btn-navy:hover{transform:translateY(-2px)}
+.btn-gold{background:var(--gg);color:#3A2508;box-shadow:0 10px 24px rgba(224,185,74,.35);position:relative;overflow:hidden}
+.btn-gold::before{content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);animation:shine 3s infinite}
+@keyframes shine{0%{left:-100%}50%,100%{left:100%}}
+.btn-gold:hover{transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--n8);border-color:var(--ln)}
+.btn-ghost:hover{background:var(--t0);border-color:var(--t5)}
+.btn-lg{padding:18px 32px;font-size:18px;border-radius:13px}
+.btn-xl{padding:22px 44px;font-size:19px;border-radius:14px}
+.btn-block{width:100%}
+.btn-whatsapp{background:linear-gradient(135deg,#128C7E 0%,#25D366 100%);color:#fff;box-shadow:0 12px 28px rgba(37,211,102,.3);font-size:17.5px;padding:18px 26px;border-radius:13px}
+.btn-whatsapp:hover{transform:translateY(-2px)}
+.btn-email{background:var(--gn);color:#fff;box-shadow:0 12px 28px rgba(14,26,68,.26);font-size:17.5px;padding:18px 26px;border-radius:13px}
+.btn-email:hover{transform:translateY(-2px)}
+.btn-add-service{display:inline-flex;align-items:center;gap:8px;font-family:inherit;font-weight:900;font-size:14.5px;padding:11px 18px;border-radius:11px;border:none;cursor:pointer;background:var(--gs);color:#fff;box-shadow:0 8px 18px rgba(23,168,156,.28);transition:.22s;white-space:nowrap}
+.btn-add-service:hover{transform:translateY(-2px)}
+.btn-add-service span{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(255,255,255,.25);font-size:15px;font-weight:900;line-height:1}
+
+/* HERO */
+.hero{position:relative;background:var(--gt);color:#fff;padding:80px 0 100px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40%;left:-15%;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(23,168,156,.3),transparent 62%)}
+.hero::after{content:"";position:absolute;bottom:-50%;right:-15%;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(14,26,68,.35),transparent 62%)}
+.hero .container{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+@media(max-width:1000px){.hero .container{grid-template-columns:1fr;gap:48px}}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,rgba(224,185,74,.2),rgba(240,208,110,.14));border:1px solid rgba(240,208,110,.4);padding:8px 18px;border-radius:999px;font-size:14.5px;color:#FFE9A8;margin-bottom:24px;font-weight:800}
+.hero h1{font-size:58px;line-height:1.12;font-weight:900;letter-spacing:-1.4px;margin-bottom:24px}
+.hero h1 .hl{background:linear-gradient(135deg,#5FE0D3 0%,#A8E0DA 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 .gold{background:linear-gradient(135deg,#FBBF24 0%,#FFE9A8 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+@media(max-width:600px){.hero h1{font-size:36px}}
+.hero .lead{font-size:19.5px;color:#C6DEDC;margin-bottom:34px;max-width:640px;line-height:1.85}
+.hero .lead b{color:#fff;font-weight:800}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.hero-cta .btn-ghost{color:#fff;border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.04)}
+.hero-note{display:flex;align-items:center;gap:10px;font-size:14.5px;color:#9FBCC0;margin-bottom:32px}
+.hero-note .ic{width:22px;height:22px;border-radius:50%;background:rgba(63,189,178,.22);display:grid;place-items:center;color:#5FE0D3;font-size:12px;font-weight:900;flex-shrink:0}
+.hero-trust{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-top:28px;border-top:1px solid rgba(255,255,255,.14)}
+@media(max-width:640px){.hero-trust{grid-template-columns:repeat(2,1fr)}}
+.hero-trust .item b{display:block;font-size:28px;font-weight:900;color:#fff;line-height:1}
+.hero-trust .item span{font-size:13.5px;color:#9FBCC0;display:block;margin-top:6px}
+.provider-card{background:#fff;border-radius:20px;padding:24px;box-shadow:0 40px 90px rgba(0,0,0,.4);position:relative;color:var(--ik)}
+.pc-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid var(--ln)}
+.pc-head h5{font-size:16px;font-weight:900;color:var(--n8)}
+.pc-head .live{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;background:#D1FAE5;color:#065F46;padding:4px 10px;border-radius:999px}
+.pc-head .live i{width:6px;height:6px;border-radius:50%;background:#10B981;animation:pl 1.6s infinite}
+.pc-stat-main{background:linear-gradient(135deg,#F0FBF9 0%,#E9F7F5 100%);border:1px solid rgba(23,168,156,.2);border-radius:14px;padding:18px 20px;margin-bottom:14px}
+.pc-stat-main .lbl{font-size:13px;color:var(--i5);font-weight:700}
+.pc-stat-main .val{font-size:38px;font-weight:900;color:var(--t7);line-height:1.1;margin:4px 0}
+.pc-stat-main .sub{font-size:12.5px;color:var(--gr);font-weight:800}
+.pc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.pc-mini{background:var(--bg);border:1px solid var(--ln);border-radius:11px;padding:12px 14px}
+.pc-mini .l{font-size:12px;color:var(--i5);font-weight:600}
+.pc-mini .v{font-size:20px;font-weight:900;color:var(--n8);margin-top:2px}
+.pc-list{display:flex;flex-direction:column;gap:7px}
+.pc-row{display:flex;justify-content:space-between;align-items:center;padding:11px 14px;background:var(--bg);border-radius:10px;border:1px solid var(--ln);font-size:13px}
+.pc-row b{color:var(--n8);font-weight:800}
+.pc-row .tag{font-size:11px;padding:3px 9px;border-radius:999px;font-weight:800}
+.tag-ok{background:#D1FAE5;color:#065F46}
+.tag-wait{background:#FEF3C7;color:#92400E}
+
+/* TRUST STRIP */
+.trust-strip{background:#fff;padding:26px 0;border-bottom:1px solid var(--ln)}
+.trust-strip .container{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
+.trust-strip .lbl{font-size:14px;color:var(--i5);font-weight:700}
+.trust-strip .cities{display:flex;gap:26px;flex-wrap:wrap;align-items:center}
+.trust-strip .city{font-size:15.5px;font-weight:900;color:var(--n7);display:flex;align-items:center;gap:7px}
+.trust-strip .city::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--t5)}
+
+/* SECTIONS */
+section{padding:88px 0}
+.sec-head{max-width:800px;margin-bottom:52px}
+.sec-head.center{margin-inline:auto;text-align:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:900;letter-spacing:2.4px;color:var(--t7);text-transform:uppercase;margin-bottom:16px}
+.kicker::before{content:"";width:26px;height:2px;background:var(--gs);border-radius:2px}
+.sec-head h2{font-size:44px;font-weight:900;color:var(--n8);margin-bottom:18px;line-height:1.22}
+@media(max-width:600px){.sec-head h2{font-size:28px}}
+.sec-head p{font-size:19px;color:var(--i5);line-height:1.85}
+
+/* SERVICES */
+.services-section{background:#fff;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+@media(max-width:900px){.services-grid{grid-template-columns:1fr}}
+.service{background:#fff;border:1.5px solid var(--ln);border-radius:20px;padding:32px;transition:.28s;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.service::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--gs)}
+.service.s2::before{background:var(--gb)}
+.service.s3::before{background:var(--gn)}
+.service.s4::before{background:linear-gradient(135deg,#129285 0%,#0E1A44 100%)}
+.service:hover{transform:translateY(-5px);box-shadow:var(--md)}
+.service .top{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.service .ic{width:64px;height:64px;border-radius:16px;flex-shrink:0;display:grid;place-items:center;font-size:30px;background:var(--gs);color:#fff}
+.service.s2 .ic{background:var(--gb)}
+.service.s3 .ic{background:var(--gn)}
+.service.s4 .ic{background:linear-gradient(135deg,#129285 0%,#0E1A44 100%)}
+.service h3{font-size:21px;font-weight:900;color:var(--n8);line-height:1.25}
+.service .comm-badge{display:inline-block;font-size:13px;font-weight:900;color:var(--t7);background:var(--t0);padding:4px 12px;border-radius:999px;margin-top:6px}
+.service .desc{font-size:15.5px;color:var(--i5);margin-bottom:22px;flex:1;line-height:1.85}
+.service ul{list-style:none;margin-bottom:24px}
+.service li{font-size:15px;color:var(--i7);padding:7px 0;display:flex;gap:10px;align-items:flex-start}
+.service li .ck{width:20px;height:20px;border-radius:50%;background:var(--t0);color:var(--t7);display:grid;place-items:center;font-size:11px;font-weight:900;flex-shrink:0;margin-top:4px}
+
+/* PAIN */
+.pain-section{background:#fff;border-bottom:1px solid var(--ln)}
+.pain-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:800px){.pain-grid{grid-template-columns:1fr}}
+.pain-card{border:1px solid var(--ln);border-radius:18px;padding:28px;background:#fff;transition:.28s}
+.pain-card:hover{transform:translateY(-4px);box-shadow:var(--md)}
+.pain-card .n{width:44px;height:44px;border-radius:12px;background:#FEF2F2;color:var(--rd);display:grid;place-items:center;font-size:19px;font-weight:900;margin-bottom:16px}
+.pain-card h4{font-size:19px;font-weight:900;color:var(--n8);margin-bottom:10px}
+.pain-card p{font-size:15.5px;color:var(--i5);line-height:1.8}
+.pain-punch{margin-top:48px;text-align:center;padding:28px;background:var(--t0);border-radius:16px;border:1px dashed rgba(23,168,156,.35)}
+.pain-punch p{font-size:20px;font-weight:800;color:var(--t7);line-height:1.6}
+
+/* BENEFITS */
+.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.benefits-grid{grid-template-columns:1fr}}
+.benefit{background:#fff;border:1px solid var(--ln);border-radius:18px;padding:30px;transition:.28s}
+.benefit:hover{transform:translateY(-6px);box-shadow:var(--md)}
+.benefit .ic{width:60px;height:60px;border-radius:15px;display:grid;place-items:center;font-size:27px;margin-bottom:20px;background:var(--t0);color:var(--t7)}
+.benefit h4{font-size:19px;font-weight:900;color:var(--n8);margin-bottom:11px}
+.benefit p{font-size:15.5px;color:var(--i5);line-height:1.85}
+
+/* ROI */
+.roi-section{background:#fff;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.roi-box{background:#fff;border:1px solid var(--ln);border-radius:24px;padding:48px;box-shadow:var(--lg)}
+.roi-tabs{display:flex;gap:8px;background:var(--bg);border-radius:14px;padding:6px;margin-bottom:36px;flex-wrap:wrap}
+.roi-tab{flex:1;min-width:170px;padding:14px 18px;border-radius:10px;cursor:pointer;font-family:inherit;font-size:15.5px;font-weight:800;color:var(--i5);background:transparent;border:none;transition:.22s;display:flex;align-items:center;justify-content:center;gap:9px}
+.roi-tab:hover{color:var(--t7)}
+.roi-tab.active{background:#fff;color:var(--n8);box-shadow:var(--sm)}
+.roi-tab .dot{width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.4}
+.roi-tab.active .dot{opacity:1;background:var(--t5)}
+.roi-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+@media(max-width:900px){.roi-grid{grid-template-columns:1fr;gap:32px}}
+.roi-inputs{display:flex;flex-direction:column;gap:26px}
+.slider-wrap label{display:flex;justify-content:space-between;align-items:center;font-size:15.5px;font-weight:800;color:var(--n8);margin-bottom:13px}
+.slider-wrap label .v{font-size:22px;color:var(--t7);font-weight:900}
+.slider-wrap input[type="range"]{width:100%;-webkit-appearance:none;height:8px;border-radius:999px;background:linear-gradient(90deg,var(--t5),var(--n7));outline:none}
+.slider-wrap input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:#fff;border:3px solid var(--n8);cursor:pointer}
+.roi-output{background:linear-gradient(135deg,#F0FBF9 0%,#E9F7F5 100%);border:1px solid rgba(23,168,156,.2);border-radius:18px;padding:32px 28px}
+.roi-row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px dashed rgba(23,168,156,.22);font-size:15.5px}
+.roi-row span{color:var(--i7);font-weight:600}
+.roi-row b{color:var(--n8);font-weight:900;font-size:17px}
+.roi-row.total{border-top:2px solid var(--t7);border-bottom:none;margin-top:10px;padding-top:20px}
+.roi-row.total b{color:var(--gr);font-size:30px}
+
+/* STEPS */
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+@media(max-width:900px){.steps-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.steps-grid{grid-template-columns:1fr}}
+.step{background:#fff;border:1px solid var(--ln);border-radius:18px;padding:30px 24px;position:relative;transition:.25s}
+.step:hover{transform:translateY(-5px);box-shadow:var(--md)}
+.step .n{position:absolute;top:-16px;right:22px;width:44px;height:44px;border-radius:12px;background:var(--gs);color:#fff;font-weight:900;font-size:19px;display:grid;place-items:center}
+.step:nth-child(2) .n{background:var(--gb)}
+.step:nth-child(3) .n{background:var(--gn)}
+.step:nth-child(4) .n{background:var(--gg);color:#3A2508}
+.step h4{font-size:17.5px;font-weight:900;color:var(--n8);margin:22px 0 10px}
+.step p{font-size:15px;color:var(--i5);line-height:1.75}
+.step .day{display:inline-block;margin-top:14px;font-size:12.5px;font-weight:800;background:var(--t0);color:var(--t7);padding:5px 12px;border-radius:999px}
+
+/* TESTI */
+.testi-section{background:#fff;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.testi-grid{grid-template-columns:1fr}}
+.testi{background:#fff;border:1px solid var(--ln);border-radius:18px;padding:30px;transition:.28s}
+.testi:hover{transform:translateY(-4px);box-shadow:var(--md)}
+.testi .stars{color:#FBBF24;font-size:14px;letter-spacing:2px;margin-bottom:12px}
+.testi p{font-size:16px;color:var(--i7);line-height:1.9;margin-bottom:20px}
+.testi .author{display:flex;align-items:center;gap:12px;padding-top:18px;border-top:1px solid var(--ln)}
+.testi .avatar{width:46px;height:46px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;font-weight:900;font-size:18px;color:#fff;background:var(--gs)}
+.testi .who b{display:block;font-size:15px;font-weight:900;color:var(--n8)}
+.testi .who small{font-size:13px;color:var(--i5)}
+
+/* GUARANTEE */
+.guarantee{background:var(--gn);color:#fff;border-radius:24px;padding:56px 48px;box-shadow:var(--lg)}
+.guarantee .grid{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+@media(max-width:800px){.guarantee .grid{grid-template-columns:1fr;text-align:center}}
+.guarantee .shield{width:120px;height:120px;border-radius:28px;background:linear-gradient(135deg,rgba(23,168,156,.25),rgba(224,185,74,.2));border:2px solid rgba(255,255,255,.18);display:grid;place-items:center;font-size:52px;margin:0 auto}
+.guarantee h3{font-size:32px;font-weight:900;margin-bottom:14px}
+.guarantee h3 span{background:linear-gradient(135deg,#FBBF24,#FFE9A8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.guarantee p{font-size:17px;color:#C6DEDC;line-height:1.85}
+.guarantee ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:20px}
+.guarantee li{display:flex;gap:11px;align-items:flex-start;font-size:16px;color:#D4EDEB}
+.guarantee li .ck{width:22px;height:22px;border-radius:50%;background:rgba(23,168,156,.25);color:#5FE0D3;display:grid;place-items:center;font-size:12px;font-weight:900;flex-shrink:0;margin-top:3px}
+
+/* COMPARE */
+.compare{background:#fff;border:1px solid var(--ln);border-radius:20px;overflow:hidden;box-shadow:var(--md)}
+.compare table{width:100%;border-collapse:collapse}
+.compare th,.compare td{padding:17px 22px;text-align:right;font-size:15.5px}
+.compare thead th{background:var(--n9);color:#fff;font-weight:800;font-size:15px}
+.compare thead th:first-child{background:#030918;width:34%}
+.compare tbody td{border-bottom:1px solid var(--ln);color:var(--i7)}
+.compare td:first-child{font-weight:800;color:var(--n8)}
+.compare td:nth-child(2){color:var(--rd);background:#FEF2F2}
+.compare td:nth-child(3){background:var(--t0);color:var(--gr);font-weight:700}
+.yes{color:var(--gr);font-weight:900}
+.no{color:#B91C1C;font-weight:900}
+
+/* FAQ */
+.faq{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+details{background:#fff;border:1px solid var(--ln);border-radius:14px;box-shadow:var(--sm);transition:.25s;overflow:hidden}
+details[open]{box-shadow:var(--md);border-color:var(--t5)}
+details summary{cursor:pointer;list-style:none;padding:22px 26px;font-size:17px;font-weight:800;color:var(--n8);display:flex;justify-content:space-between;align-items:center;gap:16px}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-size:24px;color:var(--t7);transition:.25s}
+details[open] summary::after{content:"−"}
+details .ans{padding:20px 26px 24px;font-size:15.5px;color:var(--i5);line-height:1.9;border-top:1px solid var(--ln)}
+details .ans b{color:var(--t7)}
+
+/* FINAL CTA */
+.final-cta{background:var(--gt);color:#fff;border-radius:24px;padding:64px 48px;text-align:center;position:relative;overflow:hidden}
+.final-cta h3{font-size:40px;font-weight:900;line-height:1.22;margin-bottom:20px}
+.final-cta h3 span{background:linear-gradient(135deg,#5FE0D3 0%,#A8E0DA 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.final-cta p{font-size:18px;color:#C6DEDC;margin-bottom:34px;line-height:1.85}
+.final-cta .urgency{display:inline-flex;align-items:center;gap:10px;background:rgba(245,158,11,.18);border:1px solid rgba(251,191,36,.4);padding:8px 18px;border-radius:999px;font-size:14.5px;color:#FFE9A8;font-weight:800;margin-bottom:22px}
+.final-cta .cta-group{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.final-cta .btn-white{background:#fff;color:var(--t7);font-weight:900;box-shadow:0 18px 40px rgba(0,0,0,.28)}
+.final-cta .btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4)}
+.final-cta .btn-outline:hover{background:rgba(255,255,255,.12);border-color:#fff}
+
+/* OFFER BANNER */
+.offer-banner{position:relative;background:linear-gradient(135deg,#071A33 0%,#0E1A44 40%,#0E6E66 100%);color:#fff;padding:48px 0;overflow:hidden;border-top:4px solid var(--g4);border-bottom:4px solid var(--g4)}
+.offer-banner::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 15% 30%, rgba(224,185,74,.28) 0%, transparent 45%),radial-gradient(circle at 85% 70%, rgba(23,168,156,.32) 0%, transparent 45%);pointer-events:none}
+.offer-banner .container{position:relative;z-index:2}
+.offer-grid{display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center}
+@media(max-width:900px){.offer-grid{grid-template-columns:1fr;gap:24px;text-align:center}}
+.offer-number{position:relative;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 30% 25%, #F0D06E 0%, #E0B94A 45%, #B8873A 100%);display:grid;place-items:center;box-shadow:0 0 0 8px rgba(224,185,74,.18),0 0 0 18px rgba(224,185,74,.08),0 20px 50px rgba(184,135,58,.5);animation:pg 2.6s ease-in-out infinite;flex-shrink:0;margin:0 auto}
+@keyframes pg{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.offer-number .num{font-size:78px;font-weight:900;color:#3A2508;line-height:1;letter-spacing:-3px}
+.offer-number .lbl{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);background:#3A2508;color:var(--g3);font-size:11px;font-weight:900;letter-spacing:2px;padding:3px 12px;border-radius:999px;white-space:nowrap}
+.offer-text{text-align:right}
+@media(max-width:900px){.offer-text{text-align:center}}
+.offer-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(224,185,74,.16);border:1px solid rgba(224,185,74,.45);color:var(--g3);padding:5px 14px;border-radius:999px;font-size:13px;font-weight:900;margin-bottom:14px}
+.offer-tag .pulse-dot{width:8px;height:8px;border-radius:50%;background:var(--g3);animation:pl 1.8s infinite}
+.offer-title{font-size:38px;font-weight:900;line-height:1.2;margin-bottom:10px}
+.offer-title .hl{background:linear-gradient(135deg,#F0D06E 0%,#E0B94A 50%,#F0D06E 100%);-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block}
+.offer-desc{font-size:17.5px;color:#C8D3E0;line-height:1.75;max-width:600px}
+.offer-desc b{color:#fff;font-weight:900}
+.offer-cta{display:flex;flex-direction:column;gap:12px;align-items:stretch;min-width:200px}
+@media(max-width:900px){.offer-cta{max-width:340px;margin:0 auto}}
+.offer-cta small{font-size:13px;color:#94A3B4;text-align:center;font-weight:600}
+@media(max-width:700px){.offer-number{width:120px;height:120px}.offer-number .num{font-size:60px}.offer-title{font-size:26px}}
+
+/* FORM SECTION */
+.form-section-wrap{background:linear-gradient(180deg,#F0F6F6 0%,#F8FAFC 100%);padding:80px 0}
+.layout{display:grid;grid-template-columns:1fr 380px;gap:36px;align-items:start}
+@media(max-width:1080px){.layout{grid-template-columns:1fr}}
+.form-card{background:#fff;border:1px solid var(--ln);border-radius:var(--rl);box-shadow:var(--md);overflow:hidden}
+.form-header{padding:34px 38px;border-bottom:1px solid var(--ln);background:linear-gradient(180deg,#FAFCFC 0%,#fff 100%)}
+.form-header h2{font-size:28px;font-weight:900;color:var(--n8);margin-bottom:8px}
+.form-header p{font-size:17px;color:var(--i5);line-height:1.7}
+.steps-indicator{display:flex;padding:0 38px;margin-top:24px;padding-top:24px;border-top:1px solid var(--ln);flex-wrap:wrap;gap:10px}
+.step-dot{display:flex;align-items:center;gap:10px;flex:1;font-size:15px;color:var(--i5);font-weight:700;min-width:150px}
+.step-dot .n{width:30px;height:30px;border-radius:50%;background:var(--n0);color:var(--n7);display:grid;place-items:center;font-size:14px;font-weight:900;flex-shrink:0}
+.step-dot.active .n{background:var(--gs);color:#fff}
+.step-dot.active{color:var(--t7)}
+@media(max-width:760px){.form-header{padding:26px 24px}.form-header h2{font-size:22px}.steps-indicator{padding:0 24px}}
+.form-body{padding:38px}
+.form-section{margin-bottom:42px}
+.form-section:last-child{margin-bottom:0}
+.section-head{display:flex;align-items:center;gap:14px;margin-bottom:26px;padding-bottom:18px;border-bottom:1px dashed var(--ln)}
+.section-head .ic{width:46px;height:46px;border-radius:13px;background:var(--t0);color:var(--t7);display:grid;place-items:center;font-size:22px;flex-shrink:0}
+.section-head h3{font-size:21px;font-weight:900;color:var(--n8);line-height:1.2}
+.section-head small{display:block;font-size:15px;color:var(--i5);font-weight:600;margin-top:4px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:760px){.form-grid{grid-template-columns:1fr;gap:18px}.form-body{padding:26px 22px}}
+.field{display:flex;flex-direction:column;gap:9px}
+.field.full{grid-column:1/-1}
+.field label{font-size:16.5px;font-weight:800;color:var(--n8);display:flex;align-items:center;gap:7px}
+.field label .req{color:var(--rd);font-size:17px}
+.field label .opt{font-size:13px;font-weight:700;color:var(--i5);background:var(--n0);padding:3px 9px;border-radius:7px}
+.field .hint{font-size:14px;color:var(--i5);line-height:1.6}
+.field input,.field select,.field textarea{font-family:inherit;font-size:17px;color:var(--ik);padding:15px 17px;border:1.5px solid var(--ln);border-radius:12px;background:#FBFCFE;transition:.2s;width:100%;resize:vertical;line-height:1.6}
+.field textarea{min-height:110px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--t5);background:#fff;box-shadow:0 0 0 4px rgba(23,168,156,.12)}
+.field input.invalid,.field select.invalid,.field textarea.invalid{border-color:var(--rd);box-shadow:0 0 0 4px rgba(220,38,38,.08)}
+.phone-wrap{position:relative;display:flex;align-items:stretch}
+.phone-wrap .prefix{display:flex;align-items:center;gap:7px;padding:0 18px;border:1.5px solid var(--ln);border-left:none;border-radius:0 12px 12px 0;background:var(--n0);font-size:16px;font-weight:900;color:var(--n8);white-space:nowrap;direction:ltr}
+.phone-wrap input{border-radius:12px 0 0 12px!important;direction:ltr;text-align:left}
+.service-types{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;grid-column:1/-1}
+@media(max-width:900px){.service-types{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:460px){.service-types{grid-template-columns:1fr}}
+.service-type{position:relative;cursor:pointer;display:block;padding:22px 16px;border:1.5px solid var(--ln);border-radius:14px;background:#fff;transition:.2s;text-align:center}
+.service-type:hover{border-color:var(--t2);transform:translateY(-2px)}
+.service-type input{position:absolute;opacity:0;pointer-events:none}
+.service-type .em{font-size:34px;line-height:1;margin-bottom:10px;display:block}
+.service-type .nm{font-size:17px;font-weight:900;color:var(--n8);display:block;line-height:1.25}
+.service-type .comm{font-size:13.5px;color:var(--i5);margin-top:6px;display:block;font-weight:700}
+.service-type:has(input:checked){border-color:var(--t5);background:var(--t0);box-shadow:0 0 0 4px rgba(23,168,156,.1)}
+.type-details{display:none;grid-column:1/-1;grid-template-columns:1fr 1fr;gap:22px;padding:26px 24px;background:linear-gradient(135deg,#F0F9F8 0%,#E9F7F5 100%);border:1.5px dashed var(--t2);border-radius:16px;margin-top:6px}
+.type-details.active{display:grid;animation:slideDown .35s ease-out}
+@keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){.type-details{grid-template-columns:1fr;gap:18px;padding:20px 18px}}
+.type-details .type-head{grid-column:1/-1;display:flex;align-items:center;gap:12px;margin-bottom:6px;padding-bottom:14px;border-bottom:1px solid rgba(23,168,156,.2)}
+.type-details .type-head .ic{width:40px;height:40px;border-radius:11px;background:var(--gs);color:#fff;display:grid;place-items:center;font-size:20px;flex-shrink:0}
+.type-details .type-head h4{font-size:18px;font-weight:900;color:var(--n8);line-height:1.2}
+.type-details .type-head small{display:block;font-size:14px;color:var(--t7);font-weight:700;margin-top:3px}
+.period-group{grid-column:1/-1;background:#fff;border:1.5px solid var(--ln);border-radius:14px;padding:18px 20px;position:relative;overflow:hidden}
+.period-group::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--gg)}
+.period-group.moon::before{background:var(--gn)}
+.period-group .period-title{display:flex;align-items:center;gap:10px;font-size:16.5px;font-weight:900;color:var(--n8);margin-bottom:14px;flex-wrap:wrap}
+.period-group .period-title .badge{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:999px;font-size:13px;font-weight:900}
+.period-group.sun .period-title .badge{background:#FEF3C7;color:#92400E}
+.period-group.moon .period-title .badge{background:var(--n0);color:var(--n7)}
+.period-fields{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.period-fields.two{grid-template-columns:1fr 1fr}
+@media(max-width:700px){.period-fields,.period-fields.two{grid-template-columns:1fr}}
+.period-fields .field label{font-size:15px}
+.period-fields .field input{padding:13px 15px;font-size:16px}
+.services-list-wrap{grid-column:1/-1;background:#fff;border:1.5px solid var(--ln);border-radius:14px;padding:20px 22px;position:relative;overflow:hidden}
+.services-list-wrap::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--gg)}
+.services-list-wrap.wifi::before{background:var(--gs)}
+.services-list-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px dashed var(--ln);flex-wrap:wrap}
+.services-list-head h5{font-size:16.5px;font-weight:900;color:var(--n8);line-height:1.3;display:flex;align-items:center;gap:6px}
+.services-list-head h5 .req{color:var(--rd);font-size:17px}
+.services-list-head small{display:block;font-size:13.5px;color:var(--i5);font-weight:600;margin-top:3px}
+.services-container{display:flex;flex-direction:column;gap:12px}
+.service-row{display:grid;grid-template-columns:36px 1fr 1fr 42px;gap:12px;align-items:center;padding:12px 14px;background:#FBFCFE;border:1.5px solid var(--ln);border-radius:12px;transition:.2s}
+.service-row:hover{border-color:var(--t2);background:#fff}
+.service-row.invalid{border-color:var(--rd);box-shadow:0 0 0 4px rgba(220,38,38,.08)}
+.service-row-num{width:36px;height:36px;border-radius:50%;background:var(--gs);color:#fff;display:grid;place-items:center;font-size:15px;font-weight:900}
+.service-row input{font-family:inherit;font-size:16px;color:var(--ik);padding:12px 14px;border:1.5px solid transparent;border-radius:10px;background:#fff;width:100%;transition:.2s}
+.service-row input:focus{outline:none;border-color:var(--t5);box-shadow:0 0 0 3px rgba(23,168,156,.12)}
+.service-row input.invalid{border-color:var(--rd)}
+.service-row .service-price{font-weight:800;color:var(--t7)}
+.btn-remove-service{width:42px;height:42px;border-radius:11px;border:1.5px solid var(--ln);background:#fff;color:var(--rd);font-size:20px;font-weight:900;line-height:1;cursor:pointer;transition:.2s;display:grid;place-items:center;font-family:inherit}
+.btn-remove-service:hover{background:#FEE2E2;border-color:var(--rd)}
+@media(max-width:700px){.service-row{grid-template-columns:1fr;gap:10px;padding:14px}.service-row-num{margin:0 auto}.btn-remove-service{width:100%;height:38px}}
+.char-count{font-size:13.5px;color:var(--i5);text-align:left;direction:ltr;margin-top:3px;font-weight:700}
+.char-count.warn{color:var(--rd)}
+.submit-area{background:linear-gradient(180deg,#fff 0%,#FAFCFC 100%);border-top:1px solid var(--ln);padding:34px 38px}
+@media(max-width:760px){.submit-area{padding:26px 24px}}
+.submit-note{display:flex;gap:14px;align-items:flex-start;background:var(--t0);border-radius:14px;padding:18px 20px;margin-bottom:26px;font-size:15.5px;color:var(--t7);line-height:1.75}
+.submit-note .ic{width:36px;height:36px;border-radius:11px;flex-shrink:0;background:#fff;color:var(--t7);display:grid;place-items:center;font-size:18px;font-weight:900}
+.submit-note b{color:var(--n8)}
+.submit-buttons{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.submit-buttons{grid-template-columns:1fr}}
+.privacy-note{font-size:14px;color:var(--i5);text-align:center;margin-top:20px;line-height:1.8}
+.privacy-note b{color:var(--n8)}
+.sidebar{position:sticky;top:106px;display:flex;flex-direction:column;gap:24px}
+@media(max-width:1080px){.sidebar{position:static}}
+.side-card{background:#fff;border:1px solid var(--ln);border-radius:var(--rl);padding:30px 28px;box-shadow:var(--sm)}
+.side-card h4{font-size:19px;font-weight:900;color:var(--n8);margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.side-card h4 .ic{width:38px;height:38px;border-radius:12px;background:var(--t0);color:var(--t7);display:grid;place-items:center;font-size:18px}
+.side-card.gold-card{background:linear-gradient(135deg,#FFF7E0 0%,#FDF3D0 100%);border:1.5px solid var(--g4)}
+.side-card.gold-card h4{color:#7A4A0A}
+.side-card.gold-card h4 .ic{background:var(--gg);color:#3A2508}
+.benefit-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+.benefit-list li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--i7);line-height:1.7}
+.benefit-list li .ck{width:24px;height:24px;border-radius:50%;flex-shrink:0;background:var(--t0);color:var(--t7);display:grid;place-items:center;font-size:13px;font-weight:900;margin-top:3px}
+.benefit-list li .ck.gold{background:var(--gg);color:#3A2508}
+.benefit-list li .ck.navy{background:var(--gn);color:#fff}
+.benefit-list li .ck.teal{background:var(--gs);color:#fff}
+.side-cta{background:var(--gn);color:#fff;border-radius:var(--rl);padding:30px 28px}
+.side-cta h4{font-size:19px;font-weight:900;margin-bottom:12px;line-height:1.3}
+.side-cta p{font-size:15.5px;color:#B9CCE0;margin-bottom:20px;line-height:1.75}
+.side-cta .btn{width:100%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;padding:15px 18px;font-size:16px}
+.side-cta .row{display:flex;align-items:center;gap:10px;font-size:15px;color:#B9CCE0;margin-bottom:10px;direction:ltr;justify-content:flex-end}
+.side-cta .row b{color:#fff;font-weight:900;direction:rtl;font-size:15px}
+
+/* SUCCESS OVERLAY */
+.success-overlay{position:fixed;inset:0;z-index:1000;background:rgba(5,11,34,.72);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:24px}
+.success-overlay.show{display:flex}
+.success-card{background:#fff;border-radius:var(--rl);padding:52px 42px;max-width:520px;width:100%;text-align:center;box-shadow:var(--lg)}
+.success-ic{width:88px;height:88px;border-radius:50%;background:var(--gs);color:#fff;display:grid;place-items:center;font-size:44px;font-weight:900;margin:0 auto 26px}
+.success-card h3{font-size:26px;font-weight:900;color:var(--n8);margin-bottom:12px}
+.success-card p{font-size:17px;color:var(--i5);margin-bottom:28px;line-height:1.85}
+.success-card .btn{width:100%}
+
+/* FOOTER */
+footer{background:var(--n9);color:#94A3B4;padding:44px 0 24px;border-top:1px solid rgba(255,255,255,.06)}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:#7C90A8;align-items:center}
+.foot-bottom .logo-inline b{color:#fff;font-size:20px;font-weight:900}
+.wa-float{position:fixed;bottom:24px;left:24px;z-index:50;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px rgba(37,211,102,.4);transition:.25s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar"><div class="container"><span class="pulse"></span><span>🎁 عرض الإطلاق: أول <strong>30 مزود خدمة</strong> يحصلون على <strong>شهر كامل بدون أي عمولة</strong></span></div></div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="nav">
+  <div class="container">
+    <a href="#top" class="logo"><div class="logo-name">احجزلي</div><small class="logo-sub">ehjezli.app</small></a>
+    <nav class="nav-links">
+      <a href="#services">الخدمات</a>
+      <a href="#benefits">المزايا</a>
+      <a href="#roi">احسب أرباحك</a>
+      <a href="#how">كيف تنضم</a>
+      <a href="#faq">الأسئلة</a>
+    </nav>
+    <div class="nav-cta"><a href="#join-form" class="btn btn-brand">انضم الآن ←</a></div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="container">
+    <div>
+      <div class="hero-badge">★ عرض محدود · أول 30 مزود فقط</div>
+      <h1>ضاعف حجوزاتك،<br>وخلّي <span class="hl">التقنية علينا</span>.<br><span class="gold">أول شهر مجانًا.</span></h1>
+      <p class="lead">انضم لمنصة <b>احجزلي</b> واستقبل الحجوزات إلكترونيًا 24/7 — من المسابح والملاعب إلى شبكات الإنترنت ومكاتب السفر. <b>بدون رسوم تسجيل</b>، <b>بدون اشتراك شهري</b>، وعمولة تُخصم فقط عند حجز فعلي.</p>
+      <div class="hero-cta">
+        <a href="#join-form" class="btn btn-gold btn-lg">ابدأ التسجيل مجانًا ←</a>
+        <a href="#roi" class="btn btn-ghost btn-lg">احسب أرباحك المتوقعة</a>
+      </div>
+      <div class="hero-note"><span class="ic">✓</span><span>لا نطلب بطاقة بنكية · لا التزام · إلغاء في أي وقت</span></div>
+      <div class="hero-trust">
+        <div class="item"><b>+500</b><span>مزود مستهدف</span></div>
+        <div class="item"><b>48 ساعة</b><span>لتفعيل حسابك</span></div>
+        <div class="item"><b>24/7</b><span>حجوزات بلا توقف</span></div>
+        <div class="item"><b>0 ر.ي</b><span>رسوم تأسيس</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="provider-card">
+        <div class="pc-head"><h5>لوحة تحكم مزودك</h5><span class="live"><i></i> مباشر</span></div>
+        <div class="pc-stat-main"><div class="lbl">إيرادات هذا الشهر</div><div class="val">86,400 ر.ي</div><div class="sub">▲ 41% مقارنة بالشهر الماضي</div></div>
+        <div class="pc-grid"><div class="pc-mini"><div class="l">حجوزات جديدة</div><div class="v">482</div></div><div class="pc-mini"><div class="l">نسبة الحضور</div><div class="v">96%</div></div></div>
+        <div class="pc-list">
+          <div class="pc-row"><b>حجز مسبح — 5 أفراد</b><span class="tag tag-ok">مؤكد</span></div>
+          <div class="pc-row"><b>ملعب كرة — ساعتان</b><span class="tag tag-ok">مؤكد</span></div>
+          <div class="pc-row"><b>كروت واي فاي — 20</b><span class="tag tag-wait">قيد التفعيل</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip"><div class="container"><span class="lbl">نُطلق قريبًا في:</span><div class="cities"><span class="city">المكلا</span><span class="city">سيئون</span><span class="city">عدن</span><span class="city">صنعاء</span><span class="city">تعز</span></div></div></div>
+
+<!-- SERVICES -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="kicker">القطاعات الأربعة</div>
+      <h2>اختر قطاعك وابدأ التسجيل</h2>
+      <p>كل قطاع له متطلباته وأدواته الخاصة — انقر على فئتك وستُفتح لك الاستمارة تلقائيًا.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service s1">
+        <div class="top"><div class="ic">🏊</div><div><h3>المسابح</h3><span class="comm-badge">عمولة 5% فقط</span></div></div>
+        <p class="desc">استقبل حجوزات المسابح الخاصة والعامة (عائلية، رجالية، نسائية) مع نظام فترات صباحية ومسائية وأسعار واضحة لكل فترة.</p>
+        <ul>
+          <li><span class="ck">✓</span> إدارة الفترات الصباحية والمسائية</li>
+          <li><span class="ck">✓</span> تحديد سعر مستقل لكل فترة</li>
+          <li><span class="ck">✓</span> تأكيد فوري للعميل</li>
+          <li><span class="ck">✓</span> تحصيل إلكتروني كامل</li>
+        </ul>
+        <a href="#join-form" class="btn btn-teal btn-block" data-select-type="pool">سجّل مسبحك ←</a>
+      </div>
+      <div class="service s2">
+        <div class="top"><div class="ic">⚽</div><div><h3>الملاعب الرياضية</h3><span class="comm-badge">عمولة 5% فقط</span></div></div>
+        <p class="desc">استقبل حجوزات الملاعب الرياضية (كرة قدم، بادل، تنس، سلة) مع نظام مواعيد ذكي يمنع التضارب وسعر واضح لكل ساعة.</p>
+        <ul>
+          <li><span class="ck">✓</span> نظام مواعيد ذكي بلا تضارب</li>
+          <li><span class="ck">✓</span> سعر الساعة واضح ومعلن</li>
+          <li><span class="ck">✓</span> فترات صباحية ومسائية</li>
+          <li><span class="ck">✓</span> تقارير الإشغال والذروة</li>
+        </ul>
+        <a href="#join-form" class="btn btn-brand btn-block" data-select-type="field">سجّل ملعبك ←</a>
+      </div>
+      <div class="service s3">
+        <div class="top"><div class="ic">📶</div><div><h3>شبكات الواي فاي</h3><span class="comm-badge">عمولة 10% على الكروت</span></div></div>
+        <p class="desc">اعرض فئات كروت الإنترنت (ساعة، يوم، أسبوع، شهر) للبيع عبر المنصة. العميل يشتري ويُفعّل الكرت مباشرة دون زيارة نقطة بيع.</p>
+        <ul>
+          <li><span class="ck">✓</span> بيع آلي على مدار الساعة</li>
+          <li><span class="ck">✓</span> فئات كروت متعددة بأسعار مستقلة</li>
+          <li><span class="ck">✓</span> تسليم فوري للكرت والكود</li>
+          <li><span class="ck">✓</span> تقارير المبيعات اليومية</li>
+        </ul>
+        <a href="#join-form" class="btn btn-navy btn-block" data-select-type="wifi">سجّل شبكتك ←</a>
+      </div>
+      <div class="service s4">
+        <div class="top"><div class="ic">✈️</div><div><h3>السفر والسياحة</h3><span class="comm-badge">عمولة 1% فقط</span></div></div>
+        <p class="desc">اعرض رحلاتك وخدماتك (حجز طيران، تأشيرات، برامج سياحية) بأسعار واضحة لكل خدمة، واجمع الحجوزات من مئات العملاء في مكان واحد.</p>
+        <ul>
+          <li><span class="ck">✓</span> عمولة رمزية على الرحلات</li>
+          <li><span class="ck">✓</span> إدارة خدمات متعددة بأسعار مستقلة</li>
+          <li><span class="ck">✓</span> تحصيل مقدم الحجز تلقائيًا</li>
+          <li><span class="ck">✓</span> تنبيهات وتذكيرات للمسافرين</li>
+        </ul>
+        <a href="#join-form" class="btn btn-teal btn-block" data-select-type="travel">سجّل مكتبك ←</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain-section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="kicker">الواقع الحالي</div>
+      <h2>إذا كنت تدير حجوزاتك يدويًا، فأنت تخسر 3 أشياء يوميًا.</h2>
+      <p>كل مكالمة لم تُرَد، كل رسالة واتساب ضاعت، وكل فتحة فارغة في جدولك = دخل ضاع لا يعود.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card"><div class="n">✕</div><h4>حجوزات تضيع بين المكالمات</h4><p>العميل يتصل، ما ترد، يحجز عند غيرك. الفرصة تُفقد في ثوانٍ ولن تعود.</p></div>
+      <div class="pain-card"><div class="n">✕</div><h4>تضارب في الجدول</h4><p>موظف حجز لعميل، وأنت أيضًا أكدت نفس الوقت. النتيجة: اعتذار محرج للطرفين.</p></div>
+      <div class="pain-card"><div class="n">✕</div><h4>إلغاءات بدون إشعار</h4><p>العميل لا يحضر ولا يُخطر. تخسر الساعة، وتخسر معها فرص موظفيك في التوفير.</p></div>
+      <div class="pain-card"><div class="n">✕</div><h4>لا تعرف أرقامك الحقيقية</h4><p>كم عميلًا استقبلت؟ ما أكثر خدمة مطلوبة؟ ما ساعات الذروة؟ بلا نظام = بلا قرارات.</p></div>
+    </div>
+    <div class="pain-punch"><p><b>الحقيقة الصادمة:</b> 70% من مزودي الخدمات الصغار يخسرون حجوزات يوميًا بدون أن يدركوا ذلك — فقط لأنهم لا يملكون نظامًا آليًا يستقبل بدلهم.</p></div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="kicker">الحل</div>
+      <h2>احجزلي يعمل كموظف استقبال لا ينام.</h2>
+      <p>نظام كامل يستقبل، يؤكد، يحصّل، ويرسل لك تقريرًا في نهاية اليوم — وأنت في مكانك.</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit"><div class="ic">📈</div><h4>حجوزات جديدة من يومك الأول</h4><p>خدمتك تظهر أمام آلاف العملاء الباحثين عن مسبح، ملعب، واي فاي، أو رحلة — بدون ميزانية تسويق.</p></div>
+      <div class="benefit"><div class="ic">⏱️</div><h4>وفّر 80% من وقتك الإداري</h4><p>لا مزيد من المكالمات والواتساب. الحجوزات تُدار تلقائيًا، وأنت تتابع فقط من لوحتك.</p></div>
+      <div class="benefit"><div class="ic">🗓️</div><h4>جدول ذكي لا يقبل التضارب</h4><p>النظام يمنع ازدواج الحجز في نفس الوقت تلقائيًا. اعتذار العميل؟ لن تحتاجه بعد اليوم.</p></div>
+      <div class="benefit"><div class="ic">💳</div><h4>تحصيل إلكتروني موثّق</h4><p>لا دفع نقدي ولا متأخر. العميل يدفع عبر المنصة، وتأتيك مستحقاتك محوّلة دوريًا بكشف واضح.</p></div>
+      <div class="benefit"><div class="ic">📊</div><h4>تقارير لحظية تُفهمك مشروعك</h4><p>اعرف ساعات الذروة، أكثر الخدمات طلبًا، ومعدل الإلغاء — لاتخاذ قرارات مبنية على أرقام.</p></div>
+      <div class="benefit"><div class="ic">🤝</div><h4>دعم عربي ومدير حساب شخصي</h4><p>فريق يمني يتحدث لغتك، متاح طوال الأسبوع، مع تدريب مجاني كامل على المنصة.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI -->
+<section id="roi" class="roi-section">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="kicker">حاسبة الأرباح</div>
+      <h2>كم يمكن أن تكسب فعلًا من احجزلي؟</h2>
+      <p>اختر نوع خدمتك، حرّك المؤشرين، وشاهد صافي دخلك الشهري — بالأرقام.</p>
+    </div>
+    <div class="roi-box">
+      <div class="roi-tabs">
+        <button class="roi-tab active" data-type="pool"><span class="dot"></span> 🏊 مسابح</button>
+        <button class="roi-tab" data-type="field"><span class="dot"></span> ⚽ ملاعب</button>
+        <button class="roi-tab" data-type="wifi"><span class="dot"></span> 📶 واي فاي</button>
+        <button class="roi-tab" data-type="travel"><span class="dot"></span> ✈️ سفر</button>
+      </div>
+      <div class="roi-grid">
+        <div class="roi-inputs">
+          <div class="slider-wrap">
+            <label for="roiCount"><span id="roiCountLabel">عدد الحجوزات الشهرية</span><span class="v" id="roiCountOut">200</span></label>
+            <input type="range" id="roiCount" min="10" max="3000" value="200" step="10">
+          </div>
+          <div class="slider-wrap">
+            <label for="roiValue"><span id="roiValueLabel">متوسط قيمة الحجز (ر.ي)</span><span class="v" id="roiValueOut">5,000 ر.ي</span></label>
+            <input type="range" id="roiValue" min="500" max="100000" value="5000" step="500">
+          </div>
+        </div>
+        <div class="roi-output">
+          <div class="roi-row"><span>إجمالي المبيعات</span><b id="roiTotalRev">1,000,000 ر.ي</b></div>
+          <div class="roi-row"><span>عمولة احجزلي</span><b id="roiFee">50,000 ر.ي</b></div>
+          <div class="roi-row"><span>نسبة العمولة</span><b id="roiRate" style="color:var(--t7)">5%</b></div>
+          <div class="roi-row total"><span>صافي دخلك الشهري</span><b id="roiNet">950,000 ر.ي</b></div>
+          <a href="#join-form" id="roiCtaBtn" class="btn btn-teal btn-block" style="margin-top:22px">احجز مكانك الآن ←</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="kicker">كيف تنضم</div>
+      <h2>من التسجيل إلى أول حجز في 48 ساعة.</h2>
+      <p>لا تحتاج خبرة تقنية. لا تحتاج فريقًا. نحن نتولّى كل الجانب التقني بالكامل.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step"><div class="n">1</div><h4>املأ الاستمارة</h4><p>بيانات بسيطة عن خدمتك ومعلومات التواصل. أقل من 5 دقائق.</p><span class="day">5 دقائق</span></div>
+      <div class="step"><div class="n">2</div><h4>نتواصل معك</h4><p>يتصل بك فريقنا عبر واتساب لتأكيد بياناتك ومساعدتك في تجهيز خدماتك.</p><span class="day">خلال 24 ساعة</span></div>
+      <div class="step"><div class="n">3</div><h4>نُفعّل حسابك</h4><p>ننشئ لوحة تحكمك، ونضيف خدماتك وأسعارك وفتراتك — جاهزة للاستقبال.</p><span class="day">خلال 48 ساعة</span></div>
+      <div class="step"><div class="n">4</div><h4>ابدأ باستقبال الحجوزات</h4><p>خدمتك تظهر للعملاء، الحجوزات تصل مؤكدة، والتحصيل تلقائي.</p><span class="day">فورًا</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi-section">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="kicker">شركاؤنا يتحدثون</div>
+      <h2>ماذا قال أول مزودي الخدمة؟</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>قبل احجزلي كنت أعتمد على المكالمات فقط. اليوم يستقبل النظام 60% من حجوزاتي بدون تدخل مني، وارتفع الإشغال ليلاً الذي كان فارغًا تمامًا.</p>
+        <div class="author"><div class="avatar">أ</div><div class="who"><b>أحمد ب.</b><small>صاحب مسبح — المكلا</small></div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>أكثر شيء أراحني هو منع التضارب في المواعيد. قبلها كنت أعتذر لعميل على الأقل أسبوعيًا. الآن الجدول محمي والنظام يرفض الحجز المزدوج تلقائيًا.</p>
+        <div class="author"><div class="avatar">س</div><div class="who"><b>سالم ع.</b><small>مدير ملعب كرة — سيئون</small></div></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p>كشبكة واي فاي، كنت أخسر الكثير في تحصيل قيمة الكروت نقدًا. اليوم كل عملية موثّقة إلكترونيًا، والتحويلات تصل دوريًا بكشف واضح.</p>
+        <div class="author"><div class="avatar">ف</div><div class="who"><b>فهد ح.</b><small>شبكة إنترنت — المكلا</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section>
+  <div class="container">
+    <div class="guarantee">
+      <div class="grid">
+        <div class="shield">🛡️</div>
+        <div>
+          <h3>لا مخاطرة عليك. <span>صفر.</span></h3>
+          <p>لأننا واثقون من قيمة المنصة، رفعنا كل العوائق التقليدية أمامك:</p>
+          <ul>
+            <li><span class="ck">✓</span> <b>بدون رسوم تسجيل</b> أو تأسيس — تبدأ مجانًا تمامًا.</li>
+            <li><span class="ck">✓</span> <b>بدون اشتراك شهري</b> — لن تدفع شيئًا إن لم يكن هناك حجز.</li>
+            <li><span class="ck">✓</span> <b>شهر كامل بدون عمولة</b> لمزودي الخدمة الأوائل (أول 30).</li>
+            <li><span class="ck">✓</span> <b>إلغاء في أي وقت</b> — بدون شروط ولا غرامات.</li>
+            <li><span class="ck">✓</span> <b>بياناتك محفوظة</b> — ولا نشاركها مع أي طرف ثالث.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section style="padding-top:0">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="kicker">مقارنة صريحة</div>
+      <h2>الطريقة التقليدية مقابل احجزلي</h2>
+    </div>
+    <div class="compare">
+      <table>
+        <thead><tr><th>الجانب التشغيلي</th><th>الطريقة التقليدية</th><th>مع احجزلي</th></tr></thead>
+        <tbody>
+          <tr><td>استقبال الحجز</td><td><span class="no">✕</span> مكالمة أو واتساب</td><td><span class="yes">✓</span> حجز إلكتروني 24/7</td></tr>
+          <tr><td>التأكيد للعميل</td><td><span class="no">✕</span> يدوي ومتأخر</td><td><span class="yes">✓</span> تأكيد تلقائي لحظي</td></tr>
+          <tr><td>الدفع والتحصيل</td><td><span class="no">✕</span> نقدي · متأخر</td><td><span class="yes">✓</span> إلكتروني · فوري · موثق</td></tr>
+          <tr><td>منع تضارب المواعيد</td><td><span class="no">✕</span> وارد جدًا</td><td><span class="yes">✓</span> مستحيل — الجدول محمي</td></tr>
+          <tr><td>عمولة المنصة</td><td><span class="no">✕</span> اشتراكات مرتفعة</td><td><span class="yes">✓</span> من 1% حسب القطاع</td></tr>
+          <tr><td>استقطاب عملاء جدد</td><td><span class="no">✕</span> محدود ومكلف</td><td><span class="yes">✓</span> أمام آلاف الحاجزين</td></tr>
+          <tr><td>التقارير والإحصاءات</td><td><span class="no">✕</span> غير متوفرة</td><td><span class="yes">✓</span> داشبورد لحظي</td></tr>
+          <tr><td>ساعات العمل</td><td><span class="no">✕</span> محدودة بالموظف</td><td><span class="yes">✓</span> مفتوحة 24 ساعة</td></tr>
+          <tr><td>تكلفة البدء</td><td><span class="no">✕</span> مرتفعة ومخاطرة</td><td><span class="yes">✓</span> صفر — فقط عند البيع</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="kicker">الأسئلة الشائعة</div>
+      <h2>قبل أن تسجّل، هذه إجاباتك.</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>كيف تُحسب عمولة المنصة بالضبط؟</summary><div class="ans">العمولة نسبة محددة لكل قطاع، وتُحسب <b>فقط عند تأكيد الحجز</b>: 5% للمسابح، 5% للملاعب، 10% لشبكات الواي فاي، و1% للسفر والسياحة. لا نأخذ أي نسبة إذا لم يكتمل الحجز.</div></details>
+      <details><summary>هل هناك رسوم تسجيل أو اشتراك شهري؟</summary><div class="ans">لا. صفر رسوم تسجيل، صفر اشتراك شهري، صفر رسوم تأسيس. تدفع عمولة فقط عند تحقيق حجز فعلي. وإن كنت من أول 30 مزودًا، فالشهر الأول مجاني بالكامل.</div></details>
+      <details><summary>لماذا تختلف العمولة من قطاع لآخر؟</summary><div class="ans">لكل قطاع طبيعته الاقتصادية: المسابح والملاعب 5%، شبكات الواي فاي 10% (معاملات صغيرة متكررة بكثافة)، والسفر 1% (معاملات كبيرة بهامش ضيق).</div></details>
+      <details><summary>متى أستلم مستحقاتي؟</summary><div class="ans">التحويل يتم دوريًا (أسبوعيًا أو شهريًا حسب اتفاقك) إلى حسابك البنكي أو محفظتك الإلكترونية، مع كشف تفصيلي بكل حجز.</div></details>
+      <details><summary>ماذا لو ألغى العميل الحجز؟</summary><div class="ans">أنت تحدد سياسة الإلغاء الخاصة بك، والمنصة تطبّقها تلقائيًا. ولا تُحسب أي عمولة على الحجز الملغى.</div></details>
+      <details><summary>هل يمكنني إدارة أكثر من خدمة في نفس الحساب؟</summary><div class="ans">نعم. يمكنك تسجيل مسبح، ملعب، شبكة واي فاي، ومكتب سفر — أو أي مزيج — من حساب واحد، مع لوحة تحكم موحدة.</div></details>
+      <details><summary>هل تحتاج خبرة تقنية لإدارة حسابي؟</summary><div class="ans">لا. نحن نُجهّز حسابك بالكامل، ونُدرّبك مجانًا على استخدام المنصة.</div></details>
+      <details><summary>ما متطلبات الانضمام؟</summary><div class="ans">وثيقة رسمية للمشروع، معلومات الخدمة (الموقع، الأسعار، المواعيد)، وحساب بنكي أو محفظة إلكترونية لاستلام المستحقات. فريقنا يساعدك مجانًا.</div></details>
+      <details><summary>كم يستغرق تفعيل حسابي؟</summary><div class="ans">من 24 إلى 48 ساعة من استلام بياناتك. بعض مزودي الخدمة يبدأون بنشر خدماتهم في نفس اليوم.</div></details>
+      <details><summary>ماذا لو كانت خدمتي في منطقة نائية؟</summary><div class="ans">ستستفيد أكثر. المنصة تعمل في جميع المحافظات، وتجلب لك عملاء لم يكونوا سيصلون إليك بسهولة.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER BANNER -->
+<section class="offer-banner" style="padding:48px 0">
+  <div class="container">
+    <div class="offer-grid">
+      <div class="offer-number"><div class="num">30</div><div class="lbl">مقعد فقط</div></div>
+      <div class="offer-text">
+        <div class="offer-tag"><span class="pulse-dot"></span> عرض حصري · لأول 30 مزود خدمة</div>
+        <h2 class="offer-title">ابدأ معنا <span class="hl">شهرًا كاملًا</span><br>بدون أي عمولة على مبيعاتك</h2>
+        <p class="offer-desc">انضم ضمن أول <b>30 مزود خدمة</b> وستحصل على <b>شهر كامل مجاني</b> — لا نأخذ أي عمولة على أي حجز خلال أول شهر من انضمامك. <b>العرض محدود.</b></p>
+      </div>
+      <div class="offer-cta">
+        <a href="#join-form" class="btn-gold">احجز مقعدك الآن ←</a>
+        <small>⚡ احجز مكانك قبل انتهاء العرض</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN FORM -->
+<section class="form-section-wrap" id="join-form">
+  <div class="container">
+    <div class="sec-head center">
+      <div class="kicker">التسجيل</div>
+      <h2>سجّل بياناتك الآن — أقل من 3 دقائق</h2>
+      <p>اختر نوع خدمتك، املأ البيانات، وأرسلها عبر واتساب بنقرة واحدة.</p>
+    </div>
+
+    <div class="layout">
+      <!-- FORM -->
+      <div class="form-card">
+        <div class="form-header">
+          <h2>نموذج التسجيل كمزود خدمة</h2>
+          <p>جميع البيانات المطلوبة واضحة ومبسطة — املأها في أقل من 3 دقائق.</p>
+          <div class="steps-indicator">
+            <div class="step-dot active"><div class="n">1</div><div>بيانات الخدمة</div></div>
+            <div class="step-dot active"><div class="n">2</div><div>بيانات التواصل</div></div>
+            <div class="step-dot active"><div class="n">3</div><div>تفاصيل إضافية</div></div>
+          </div>
+        </div>
+
+        <form id="providerForm" novalidate>
+          <div class="form-body">
+
+            <!-- SECTION 1 -->
+            <div class="form-section">
+              <div class="section-head">
+                <div class="ic">🏢</div>
+                <div><h3>بيانات الخدمة</h3><small>أخبرنا عن نوع الخدمة التي تريد عرضها</small></div>
+              </div>
+              <div class="form-grid">
+                <div class="service-types">
+                  <label class="service-type">
+                    <input type="radio" name="service_type" value="مسبح" required>
+                    <span class="em">🏊</span><span class="nm">مسبح</span><span class="comm">عمولة 5%</span>
+                  </label>
+                  <label class="service-type">
+                    <input type="radio" name="service_type" value="ملعب رياضي" required>
+                    <span class="em">⚽</span><span class="nm">ملعب رياضي</span><span class="comm">عمولة 5%</span>
+                  </label>
+                  <label class="service-type">
+                    <input type="radio" name="service_type" value="شبكة واي فاي" required>
+                    <span class="em">📶</span><span class="nm">شبكة واي فاي</span><span class="comm">عمولة 10%</span>
+                  </label>
+                  <label class="service-type">
+                    <input type="radio" name="service_type" value="مكتب سفر وسياحة" required>
+                    <span class="em">✈️</span><span class="nm">سفر وسياحة</span><span class="comm">عمولة 1%</span>
+                  </label>
+                </div>
+                <div class="field full">
+                  <label>اسم الخدمة / المشروع <span class="req">*</span></label>
+                  <input type="text" name="service_name" placeholder="مثال: ملعب النجوم الخماسي" required maxlength="80">
+                </div>
+                <div class="field">
+                  <label>اسم المسؤول <span class="req">*</span></label>
+                  <input type="text" name="owner_name" placeholder="الاسم الكامل" required maxlength="60">
+                </div>
+                <div class="field">
+                  <label>صفة المسؤول <span class="opt">اختياري</span></label>
+                  <select name="position">
+                    <option value="">اختر الصفة</option>
+                    <option>مالك</option><option>مدير</option><option>ممثل مفوض</option><option>أخرى</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 2 -->
+            <div class="form-section">
+              <div class="section-head">
+                <div class="ic">📞</div>
+                <div><h3>بيانات التواصل</h3><small>لنتواصل معك ونرسل لك تفاصيل التفعيل</small></div>
+              </div>
+              <div class="form-grid">
+                <div class="field">
+                  <label>رقم الجوال / واتساب <span class="req">*</span></label>
+                  <div class="phone-wrap">
+                    <input type="tel" name="phone" placeholder="7XX XXX XXX" required pattern="[0-9\s]{9,15}" inputmode="numeric">
+                    <span class="prefix">🇾🇪 +967</span>
+                  </div>
+                  <span class="hint">سنراسلك عبر واتساب لتأكيد الطلب</span>
+                </div>
+                <div class="field">
+                  <label>البريد الإلكتروني <span class="opt">اختياري</span></label>
+                  <input type="email" name="email" placeholder="name@example.com" style="direction:ltr;text-align:left">
+                </div>
+                <div class="field">
+                  <label>المحافظة <span class="req">*</span></label>
+                  <select name="governorate" required>
+                    <option value="">اختر المحافظة</option>
+                    <option>حضرموت</option><option>عدن</option><option>صنعاء</option><option>تعز</option>
+                    <option>الحديدة</option><option>إب</option><option>المهرة</option><option>شبوة</option>
+                    <option>أبين</option><option>لحج</option><option>الضالع</option><option>البيضاء</option>
+                    <option>مأرب</option><option>الجوف</option><option>صعدة</option><option>حجة</option>
+                    <option>عمران</option><option>ذمار</option><option>المحويت</option><option>ريمة</option><option>سقطرى</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label>المدينة / المديرية <span class="req">*</span></label>
+                  <input type="text" name="city" placeholder="مثال: المكلا · مدينة الشحر" required maxlength="60">
+                </div>
+                <div class="field full">
+                  <label>العنوان التفصيلي <span class="opt">اختياري</span></label>
+                  <input type="text" name="address" placeholder="الشارع، أقرب علامة مميزة" maxlength="120">
+                </div>
+                <div class="field full">
+                  <label>رابط الموقع على الخرائط <span class="opt">اختياري</span></label>
+                  <input type="url" name="maps_link" placeholder="https://maps.google.com/..." style="direction:ltr;text-align:left">
+                  <span class="hint">انسخ رابط الموقع من Google Maps — يساعد العملاء على الوصول إليك</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SECTION 3 -->
+            <div class="form-section">
+              <div class="section-head">
+                <div class="ic">📝</div>
+                <div><h3>تفاصيل الخدمة</h3><small>حقول خاصة بنوع الخدمة المختار — ستظهر تلقائيًا</small></div>
+              </div>
+              <div class="form-grid">
+                <div class="field full">
+                  <label>وصف مختصر للخدمة <span class="req">*</span></label>
+                  <textarea name="description" placeholder="اكتب وصفًا موجزًا: المرافق، المميزات، الخدمات الإضافية..." required maxlength="400" id="descArea"></textarea>
+                  <div class="char-count" id="charCount">0 / 400</div>
+                </div>
+
+                <!-- POOL -->
+                <div class="type-details" data-type="مسبح">
+                  <div class="type-head"><div class="ic">🏊</div><div><h4>تفاصيل المسبح</h4><small>عدد المسابح، الفترات، وأسعار كل فترة</small></div></div>
+                  <div class="field full"><label>عدد المسابح <span class="req">*</span></label><input type="number" name="pool_count" placeholder="مثال: 2" min="1" max="50" data-required="1"></div>
+                  <div class="period-group sun">
+                    <div class="period-title"><span class="badge">☀️ صباحية</span> الفترة الصباحية</div>
+                    <div class="period-fields">
+                      <div class="field"><label>من <span class="req">*</span></label><input type="time" name="pool_morning_from" data-required="1"></div>
+                      <div class="field"><label>إلى <span class="req">*</span></label><input type="time" name="pool_morning_to" data-required="1"></div>
+                      <div class="field"><label>السعر (ر.ي) <span class="req">*</span></label><input type="text" name="pool_morning_price" placeholder="3,000" maxlength="30" data-required="1"></div>
+                    </div>
+                  </div>
+                  <div class="period-group moon">
+                    <div class="period-title"><span class="badge">🌙 مسائية</span> الفترة المسائية</div>
+                    <div class="period-fields">
+                      <div class="field"><label>من <span class="req">*</span></label><input type="time" name="pool_evening_from" data-required="1"></div>
+                      <div class="field"><label>إلى <span class="req">*</span></label><input type="time" name="pool_evening_to" data-required="1"></div>
+                      <div class="field"><label>السعر (ر.ي) <span class="req">*</span></label><input type="text" name="pool_evening_price" placeholder="5,000" maxlength="30" data-required="1"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- FIELD -->
+                <div class="type-details" data-type="ملعب رياضي">
+                  <div class="type-head"><div class="ic">⚽</div><div><h4>تفاصيل الملعب</h4><small>عدد الملاعب، سعر الساعة، والفترات</small></div></div>
+                  <div class="field"><label>عدد الملاعب <span class="req">*</span></label><input type="number" name="field_count" placeholder="3" min="1" max="50" data-required="1"></div>
+                  <div class="field"><label>سعر الساعة (ر.ي) <span class="req">*</span></label><input type="text" name="field_hourly_price" placeholder="5,000" maxlength="30" data-required="1"></div>
+                  <div class="period-group sun">
+                    <div class="period-title"><span class="badge">☀️ صباحية</span> الفترة الصباحية</div>
+                    <div class="period-fields two">
+                      <div class="field"><label>من <span class="req">*</span></label><input type="time" name="field_morning_from" data-required="1"></div>
+                      <div class="field"><label>إلى <span class="req">*</span></label><input type="time" name="field_morning_to" data-required="1"></div>
+                    </div>
+                  </div>
+                  <div class="period-group moon">
+                    <div class="period-title"><span class="badge">🌙 مسائية</span> الفترة المسائية</div>
+                    <div class="period-fields two">
+                      <div class="field"><label>من <span class="req">*</span></label><input type="time" name="field_evening_from" data-required="1"></div>
+                      <div class="field"><label>إلى <span class="req">*</span></label><input type="time" name="field_evening_to" data-required="1"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- WIFI -->
+                <div class="type-details" data-type="شبكة واي فاي">
+                  <div class="type-head"><div class="ic">📶</div><div><h4>تفاصيل كروت الواي فاي</h4><small>أضف فئات الكروت وسعر كل كرت</small></div></div>
+                  <div class="services-list-wrap wifi">
+                    <div class="services-list-head">
+                      <div><h5>💳 فئات الكروت المتوفرة <span class="req">*</span></h5><small>أضف كل فئة من الكروت مع سعرها</small></div>
+                      <button type="button" class="btn-add-service" id="addWifiCardBtn"><span>+</span> إضافة فئة</button>
+                    </div>
+                    <div class="services-container" id="wifiCardsContainer"></div>
+                  </div>
+                  <div class="field full" style="grid-column:1/-1">
+                    <label>ملاحظات على الكروت <span class="opt">اختياري</span></label>
+                    <textarea name="wifi_notes" placeholder="أي تفاصيل إضافية عن الكروت" maxlength="300" style="min-height:80px"></textarea>
+                  </div>
+                </div>
+
+                <!-- TRAVEL -->
+                <div class="type-details" data-type="مكتب سفر وسياحة">
+                  <div class="type-head"><div class="ic">✈️</div><div><h4>تفاصيل مكتب السفر</h4><small>معلومات الفروع والخدمات</small></div></div>
+                  <div class="field"><label>عدد الفروع <span class="opt">اختياري</span></label><input type="number" name="travel_units" placeholder="2" min="1" max="200"></div>
+                  <div class="field"><label>ساعات العمل <span class="opt">اختياري</span></label><input type="text" name="travel_hours" placeholder="9 ص - 9 م" maxlength="60"></div>
+                  <div class="services-list-wrap">
+                    <div class="services-list-head">
+                      <div><h5>🛎️ الخدمات المتوفرة <span class="req">*</span></h5><small>أضف كل خدمة مع سعرها</small></div>
+                      <button type="button" class="btn-add-service" id="addServiceBtn"><span>+</span> إضافة خدمة</button>
+                    </div>
+                    <div class="services-container" id="servicesContainer"></div>
+                  </div>
+                </div>
+
+                <div class="field full">
+                  <label>حساب التواصل الاجتماعي <span class="opt">اختياري</span></label>
+                  <input type="text" name="social" placeholder="فيسبوك / إنستقرام / تويتر" maxlength="100" style="direction:ltr;text-align:left">
+                </div>
+                <div class="field full">
+                  <label>ملاحظات إضافية <span class="opt">اختياري</span></label>
+                  <textarea name="notes" placeholder="أي تفاصيل تود أن يعرفها فريقنا..." maxlength="300" style="min-height:90px"></textarea>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="submit-area">
+            <div class="submit-note">
+              <div class="ic">✓</div>
+              <div><b>اختر طريقة الإرسال:</b> سيرسل النموذج كاملًا عبر واتساب أو البريد بنقرة واحدة. لن نحفظ بياناتك على أي خادم.</div>
+            </div>
+            <div class="submit-buttons">
+              <button type="button" class="btn btn-whatsapp" id="sendWhatsapp">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                إرسال عبر واتساب
+              </button>
+              <button type="button" class="btn btn-email" id="sendEmail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                إرسال عبر البريد
+              </button>
+            </div>
+            <p class="privacy-note">بإرسالك الطلب فأنت توافق على <b>شروط الشراكة</b> و<b>سياسة الخصوصية</b> لمنصة احجزلي.</p>
+          </div>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="side-card gold-card">
+          <h4><span class="ic">🎁</span> عرض حصري لأول 30</h4>
+          <ul class="benefit-list">
+            <li><span class="ck gold">★</span> <b>شهر كامل بدون أي عمولة</b> على مبيعاتك</li>
+            <li><span class="ck gold">★</span> بدون رسوم تأسيس</li>
+            <li><span class="ck gold">★</span> بدون اشتراك شهري</li>
+            <li><span class="ck gold">★</span> أولوية في الدعم والتفعيل</li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h4><span class="ic">✨</span> لماذا تنضم إلينا؟</h4>
+          <ul class="benefit-list">
+            <li><span class="ck">✓</span> <b>بدون رسوم تأسيس</b> أو اشتراك شهري</li>
+            <li><span class="ck">✓</span> عمولة شفافة: <b>5% · 10% · 1%</b></li>
+            <li><span class="ck">✓</span> تفعيل الحساب خلال <b>48 ساعة</b></li>
+            <li><span class="ck">✓</span> ظهور خدمتك أمام <b>آلاف العملاء</b></li>
+            <li><span class="ck">✓</span> تحصيل إلكتروني فوري</li>
+            <li><span class="ck">✓</span> تقارير وإحصاءات لحظية</li>
+            <li><span class="ck">✓</span> دعم عربي ومدير حساب مخصص</li>
+          </ul>
+        </div>
+        <div class="side-card">
+          <h4><span class="ic">🔄</span> ماذا يحدث بعد الإرسال؟</h4>
+          <ul class="benefit-list">
+            <li><span class="ck teal">1</span> يتلقى فريقنا طلبك فورًا</li>
+            <li><span class="ck teal">2</span> نتواصل معك خلال <b>24 ساعة</b></li>
+            <li><span class="ck navy">3</span> <b>نرسل لك العقد الإلكتروني</b></li>
+            <li><span class="ck teal">4</span> نُجهّز حسابك ونضيف خدماتك</li>
+            <li><span class="ck teal">5</span> تبدأ باستقبال الحجوزات</li>
+          </ul>
+        </div>
+        <div class="side-cta">
+          <h4>هل تحتاج مساعدة؟</h4>
+          <p>فريقنا جاهز للإجابة على أسئلتك وتسهيل عملية التسجيل.</p>
+          <div class="row"><b>واتساب:</b> <span>+967 784 975 877</span></div>
+          <div class="row"><b>البريد:</b> <span>appehjezli@gmail.com</span></div>
+          <a href="https://wa.me/967784975877?text=السلام%20عليكم،%20أرغب%20بالاستفادة%20من%20عرض%20أول%2030%20مزود%20خدمة" target="_blank" rel="noopener" class="btn" style="margin-top:18px">تواصل عبر واتساب ←</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section style="padding-top:0">
+  <div class="container">
+    <div class="final-cta">
+      <div class="urgency">⏳ المتبقي <strong id="slotsLeft">17</strong> مقعدًا من أصل 30</div>
+      <h3>جاهز تبدأ؟<br>سجّل الآن وابدأ باستقبال الحجوزات.</h3>
+      <p>لن يأخذ منك التسجيل أكثر من 5 دقائق. لا نطلب منك التزامًا، ولا رسومًا، ولا أي معلومة بنكية.</p>
+      <div class="cta-group">
+        <a href="#join-form" class="btn btn-white btn-xl">📝 املأ الاستمارة الآن ←</a>
+        <a href="https://wa.me/967784975877?text=السلام%20عليكم،%20أرغب%20بالانضمام%20لمنصة%20احجزلي%20كمزود%20خدمة" target="_blank" rel="noopener" class="btn btn-outline btn-xl">💬 استفسر عبر واتساب</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-bottom">
+      <div class="logo-inline"><b>احجزلي</b></div>
+      <div>© 2026 احجزلي · جميع الحقوق محفوظة</div>
+      <div>المكلا · حضرموت · اليمن</div>
+    </div>
+  </div>
+</footer>
+
+<!-- WA FLOAT -->
+<a class="wa-float" href="https://wa.me/967784975877?text=السلام%20عليكم،%20أرغب%20بالانضمام%20لمنصة%20احجزلي%20كمزود%20خدمة" target="_blank" rel="noopener" aria-label="واتساب">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- SUCCESS OVERLAY -->
+<div class="success-overlay" id="successOverlay">
+  <div class="success-card">
+    <div class="success-ic">✓</div>
+    <h3>تم تجهيز طلبك بنجاح!</h3>
+    <p id="successMsg">تم فتح نافذة الإرسال. أرسل الرسالة، وسيتلقى فريقنا طلبك مباشرة.</p>
+    <button class="btn btn-ghost" onclick="document.getElementById('successOverlay').classList.remove('show')">إغلاق</button>
+  </div>
+</div>
+
+<script>
+/* ============ NAVBAR SHADOW ============ */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', ()=>nav.classList.toggle('scrolled', window.scrollY>20), {passive:true});
+
+/* ============ FAQ SINGLE OPEN ============ */
+document.querySelectorAll('details').forEach(d=>{
+  d.addEventListener('toggle', ()=>{
+    if(d.open) document.querySelectorAll('details').forEach(o=>{ if(o!==d) o.open=false; });
+  });
+});
+
+/* ============ ROI CALCULATOR ============ */
+const ROI = {
+  pool:  {r:.05,l1:'عدد حجوزات المسبح شهريًا',l2:'متوسط قيمة الحجز (ر.ي)',c:200,cm:3000,cs:10,vm:100000,vs:500,v:5000},
+  field: {r:.05,l1:'عدد حجوزات الملعب شهريًا',l2:'متوسط سعر الساعة (ر.ي)',c:200,cm:3000,cs:10,vm:100000,vs:500,v:5000},
+  wifi:  {r:.10,l1:'عدد الكروت المباعة شهريًا',l2:'متوسط قيمة الكرت (ر.ي)',c:500,cm:20000,cs:50,vm:20000,vs:100,v:1000},
+  travel:{r:.01,l1:'عدد الحجوزات الشهرية',l2:'متوسط قيمة الرحلة (ر.ي)',c:30,cm:1000,cs:5,vm:500000,vs:1000,v:150000}
+};
+let rType='pool';
+const rTabs=document.querySelectorAll('.roi-tab');
+const rC=document.getElementById('roiCount'), rV=document.getElementById('roiValue');
+const rCL=document.getElementById('roiCountLabel'), rVL=document.getElementById('roiValueLabel');
+const rCO=document.getElementById('roiCountOut'), rVO=document.getElementById('roiValueOut');
+const rTR=document.getElementById('roiTotalRev'), rF=document.getElementById('roiFee');
+const rR=document.getElementById('roiRate'), rN=document.getElementById('roiNet');
+const fmt=n=>n.toLocaleString('en-US');
+
+function rApply(t){
+  const c=ROI[t]; rType=t;
+  rCL.textContent=c.l1; rVL.textContent=c.l2;
+  rC.max=c.cm; rC.step=c.cs; rV.max=c.vm; rV.step=c.vs;
+  rC.value=c.c; rV.value=c.v;
+  rUpdate();
+}
+function rUpdate(){
+  const c=ROI[rType];
+  const n=parseInt(rC.value,10), v=parseInt(rV.value,10);
+  const rev=n*v, fee=Math.round(rev*c.r), net=rev-fee;
+  rCO.textContent=fmt(n);
+  rVO.textContent=fmt(v)+' ر.ي';
+  rTR.textContent=fmt(rev)+' ر.ي';
+  rF.textContent=fmt(fee)+' ر.ي';
+  rR.textContent=(c.r*100).toFixed(0)+'%';
+  rN.textContent=fmt(net)+' ر.ي';
+}
+rTabs.forEach(t=>t.addEventListener('click', ()=>{
+  rTabs.forEach(x=>x.classList.remove('active'));
+  t.classList.add('active'); rApply(t.dataset.type);
+}));
+rC.addEventListener('input', rUpdate);
+rV.addEventListener('input', rUpdate);
+rApply('pool');
+document.getElementById('roiCtaBtn')?.addEventListener('click', function(){
+  const a=document.querySelector('.roi-tab.active');
+  if(a) this.href='#join-form';
+});
+
+/* ============ FORM LOGIC ============ */
+const CONFIG = {WA:'967784975877', EMAIL:'appehjezli@gmail.com', SUBJ:'طلب انضمام مزود خدمة — منصة احجزلي'};
+const form = document.getElementById('providerForm');
+const descArea = document.getElementById('descArea');
+const charCount = document.getElementById('charCount');
+
+descArea.addEventListener('input', ()=>{
+  const l=descArea.value.length;
+  charCount.textContent=l+' / 400';
+  charCount.classList.toggle('warn', l>380);
+});
+
+/* Dynamic lists */
+function setupList({cId,aId,nP,pP,rows=3}){
+  const c=document.getElementById(cId), a=document.getElementById(aId);
+  function upd(){[...c.children].forEach((r,i)=>{const n=r.querySelector('.service-row-num'); if(n)n.textContent=i+1;});}
+  function mk(){
+    const r=document.createElement('div');
+    r.className='service-row';
+    r.innerHTML='<div class="service-row-num">1</div><input type="text" class="service-name" placeholder="'+nP+'" maxlength="80"><input type="text" class="service-price" placeholder="'+pP+'" maxlength="50"><button type="button" class="btn-remove-service">×</button>';
+    r.querySelector('.btn-remove-service').addEventListener('click', ()=>{
+      r.remove(); if(!c.children.length) mk(); upd();
+    });
+    r.querySelectorAll('input').forEach(i=>i.addEventListener('input', ()=>{i.classList.remove('invalid');r.classList.remove('invalid');}));
+    c.appendChild(r); upd();
+  }
+  a.addEventListener('click', ()=>{mk(); c.lastElementChild.querySelector('.service-name').focus();});
+  for(let i=0;i<rows;i++) mk();
+  return {
+    get:()=>[...c.children].map(r=>({name:r.querySelector('.service-name').value.trim(),price:r.querySelector('.service-price').value.trim()})).filter(s=>s.name||s.price),
+    box:()=>c,
+    mark:()=>{[...c.children].forEach(r=>{if(!r.querySelector('.service-name').value.trim())r.querySelector('.service-name').classList.add('invalid');if(!r.querySelector('.service-price').value.trim())r.querySelector('.service-price').classList.add('invalid');r.classList.add('invalid');});}
+  };
+}
+const wifiL=setupList({cId:'wifiCardsContainer',aId:'addWifiCardBtn',nP:'اسم الفئة (كرت ساعة)',pP:'السعر (100 ر.ي)'});
+const travelL=setupList({cId:'servicesContainer',aId:'addServiceBtn',nP:'اسم الخدمة (حجز طيران)',pP:'السعر (50,000 ر.ي)'});
+
+/* Service type show/hide */
+function updateTypeFields(type){
+  document.querySelectorAll('.type-details').forEach(td=>{
+    const a=td.dataset.type===type;
+    td.classList.toggle('active', a);
+    td.querySelectorAll('[data-required]').forEach(el=>{
+      if(a) el.setAttribute('required','required');
+      else { el.removeAttribute('required'); el.classList.remove('invalid'); }
+    });
+  });
+}
+form.querySelectorAll('input[name="service_type"]').forEach(r=>{
+  r.addEventListener('change', ()=>{if(r.checked) updateTypeFields(r.value);});
+});
+
+/* Category auto-select from data-select-type */
+const TYPE_MAP = {pool:'مسبح', field:'ملعب رياضي', wifi:'شبكة واي فاي', travel:'مكتب سفر وسياحة'};
+function selectType(k){
+  const v=TYPE_MAP[k]||k;
+  const r=form.querySelector('input[name="service_type"][value="'+v+'"]');
+  if(r){ r.checked=true; r.dispatchEvent(new Event('change',{bubbles:true})); updateTypeFields(v); return true; }
+  return false;
+}
+document.querySelectorAll('[data-select-type]').forEach(el=>{
+  el.addEventListener('click', ()=>{selectType(el.dataset.selectType);});
+});
+/* Preselect from URL or storage */
+(function(){
+  const q=new URLSearchParams(location.search).get('type');
+  let s=''; try{s=localStorage.getItem('ehjezli_intent_type')||'';}catch(e){}
+  const t=(q||s).toLowerCase().trim();
+  if(t && TYPE_MAP[t]) selectType(t);
+})();
+
+/* Validation */
+function validateForm(){
+  const req=form.querySelectorAll('[required]');
+  let first=null;
+  req.forEach(el=>{
+    if(el.offsetParent===null) return;
+    const isR=el.type==='radio';
+    let v=true;
+    if(isR){ v=Array.from(form.querySelectorAll('[name="'+el.name+'"]')).some(x=>x.checked); }
+    else { v=el.value.trim()!=='' && el.checkValidity(); }
+    el.classList.toggle('invalid', !v);
+    if(!v && !first) first = isR ? form.querySelector('[name="'+el.name+'"]').closest('.service-types') : el;
+  });
+  const st=form.querySelector('input[name="service_type"]:checked')?.value;
+  if(st==='شبكة واي فاي'){ const ok=wifiL.get().filter(x=>x.name&&x.price); if(!ok.length){wifiL.mark(); if(!first)first=wifiL.box();} }
+  if(st==='مكتب سفر وسياحة'){ const ok=travelL.get().filter(x=>x.name&&x.price); if(!ok.length){travelL.mark(); if(!first)first=travelL.box();} }
+  if(first){ first.scrollIntoView({behavior:'smooth',block:'center'}); return false; }
+  return true;
+}
+
+/* Time format */
+function fmtT(t){
+  if(!t) return '—';
+  const [h,m]=t.split(':'), hr=parseInt(h,10);
+  const p=hr<12?'ص':'م', h12=hr%12===0?12:hr%12;
+  return h12+':'+m+' '+p;
+}
+function pLine(f,t,p){ const tm=(f&&t)?fmtT(f)+' — '+fmtT(t):'—'; return p?tm+' · السعر: '+p:tm; }
+
+/* Collect */
+function collect(){
+  const d=new FormData(form), g=k=>(d.get(k)||'').toString().trim();
+  const st=form.querySelector('input[name="service_type"]:checked')?.value||'';
+  const ph='+967 '+g('phone').replace(/\D/g,'');
+  return {
+    st, sn:g('service_name'), on:g('owner_name'), pos:g('position'), ph, em:g('email')||'—',
+    gov:g('governorate'), city:g('city'), addr:g('address'), maps:g('maps_link'),
+    desc:g('description'), soc:g('social'), notes:g('notes'),
+    pc:g('pool_count'), pmf:g('pool_morning_from'), pmt:g('pool_morning_to'), pmp:g('pool_morning_price'),
+    pef:g('pool_evening_from'), pet:g('pool_evening_to'), pep:g('pool_evening_price'),
+    fc:g('field_count'), fhp:g('field_hourly_price'), fmf:g('field_morning_from'), fmt:g('field_morning_to'),
+    fef:g('field_evening_from'), fet:g('field_evening_to'),
+    wn:g('wifi_notes'), wc:wifiL.get().filter(x=>x.name&&x.price),
+    tu:g('travel_units'), th:g('travel_hours'), ts:travelL.get().filter(x=>x.name&&x.price),
+    ts2:new Date().toLocaleString('ar-YE',{dateStyle:'medium',timeStyle:'short'})
+  };
+}
+
+/* Format message */
+function fmtMsg(d){
+  const L=['السلام عليكم،','أرغب بالانضمام إلى منصة احجزلي كمزود خدمة. تفاصيل الطلب:','','━━━━━━━━━━━━━━━━━━','📋 *بيانات الخدمة*','━━━━━━━━━━━━━━━━━━','• نوع الخدمة: '+d.st,'• اسم الخدمة: '+d.sn,'• المسؤول: '+d.on+(d.pos?' ('+d.pos+')':'')];
+  if(d.st==='مسبح'){
+    L.push('','━━━━━━━━━━━━━━━━━━','🏊 *تفاصيل المسبح*','━━━━━━━━━━━━━━━━━━','• عدد المسابح: '+(d.pc||'—'),'• الفترة الصباحية: '+pLine(d.pmf,d.pmt,d.pmp),'• الفترة المسائية: '+pLine(d.pef,d.pet,d.pep));
+  } else if(d.st==='ملعب رياضي'){
+    L.push('','━━━━━━━━━━━━━━━━━━','⚽ *تفاصيل الملعب*','━━━━━━━━━━━━━━━━━━','• عدد الملاعب: '+(d.fc||'—'),'• سعر الساعة: '+(d.fhp||'—'),'• الفترة الصباحية: '+pLine(d.fmf,d.fmt),'• الفترة المسائية: '+pLine(d.fef,d.fet));
+  } else if(d.st==='شبكة واي فاي'){
+    L.push('','━━━━━━━━━━━━━━━━━━','📶 *فئات كروت الواي فاي*','━━━━━━━━━━━━━━━━━━');
+    d.wc.forEach((c,i)=>L.push('  '+(i+1)+'. '+c.name+' — '+c.price));
+    if(d.wn) L.push('','📌 ملاحظات: '+d.wn);
+  } else if(d.st==='مكتب سفر وسياحة'){
+    L.push('','━━━━━━━━━━━━━━━━━━','✈️ *تفاصيل مكتب السفر*','━━━━━━━━━━━━━━━━━━');
+    if(d.tu) L.push('• عدد الفروع: '+d.tu);
+    if(d.th) L.push('• ساعات العمل: '+d.th);
+    L.push('','*🛎️ الخدمات المتوفرة:*');
+    d.ts.forEach((s,i)=>L.push('  '+(i+1)+'. '+s.name+' — '+s.price));
+  }
+  L.push('','━━━━━━━━━━━━━━━━━━','📞 *بيانات التواصل*','━━━━━━━━━━━━━━━━━━','• الجوال / واتساب: '+d.ph,'• البريد: '+d.em,'• المحافظة: '+d.gov,'• المدينة: '+d.city);
+  if(d.addr) L.push('• العنوان: '+d.addr);
+  if(d.maps) L.push('• الموقع: '+d.maps);
+  L.push('','━━━━━━━━━━━━━━━━━━','📝 *وصف الخدمة*','━━━━━━━━━━━━━━━━━━','• '+d.desc);
+  if(d.soc) L.push('• حساب التواصل: '+d.soc);
+  if(d.notes) L.push('• ملاحظات: '+d.notes);
+  L.push('','━━━━━━━━━━━━━━━━━━','🕒 '+d.ts2);
+  return L.join('\n');
+}
+
+/* Send */
+function showSuc(m){
+  const s=document.getElementById('successMsg');
+  s.textContent = m==='wa' ? 'تم فتح واتساب مع نص الطلب. اضغط "إرسال" ليصلنا طلبك فورًا.' : 'تم فتح تطبيق البريد مع نص الطلب. اضغط "إرسال".';
+  document.getElementById('successOverlay').classList.add('show');
+}
+document.getElementById('sendWhatsapp').addEventListener('click', ()=>{
+  if(!validateForm()) return;
+  const url='https://wa.me/'+CONFIG.WA+'?text='+encodeURIComponent(fmtMsg(collect()));
+  window.open(url,'_blank','noopener'); showSuc('wa');
+});
+document.getElementById('sendEmail').addEventListener('click', ()=>{
+  if(!validateForm()) return;
+  const body=fmtMsg(collect()).replace(/\*/g,'');
+  window.location.href='mailto:'+CONFIG.EMAIL+'?subject='+encodeURIComponent(CONFIG.SUBJ)+'&body='+encodeURIComponent(body);
+  showSuc('em');
+});
+
+/* Clear invalid */
+form.querySelectorAll('input,select,textarea').forEach(el=>{
+  el.addEventListener('input', ()=>el.classList.remove('invalid'));
+  el.addEventListener('change', ()=>el.classList.remove('invalid'));
+});
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') document.getElementById('successOverlay').classList.remove('show'); });
+
+/* Slots counter */
+let slots=17;
+const sEl=document.getElementById('slotsLeft');
+setInterval(()=>{ if(slots>5){slots--; if(sEl)sEl.textContent=slots;} }, 45000);
+</script>
+</body>
 </html>
